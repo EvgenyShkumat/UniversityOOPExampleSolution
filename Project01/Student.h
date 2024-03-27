@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <string>
 using namespace std;
 
@@ -7,6 +7,14 @@ public:
 	string name;
 	int age;
 	double mark;
+
+	// default constructor 
+
+	Student() {
+		name = "no name";
+		age = 6;
+		mark = 4;
+	}
 
 	string convert() {
 		string s = "";

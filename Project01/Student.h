@@ -38,6 +38,10 @@ public:
 
 	//}
 
+	~Student() {
+		cout << "Desctructor was called";
+	}
+
 	string convert() {
 		string s = "";
 		s += name;

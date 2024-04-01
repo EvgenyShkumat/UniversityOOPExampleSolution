@@ -16,27 +16,27 @@ public:
 		mark = 4;
 	}
 
-	Student(string nm) {
-		name = nm;
-	}
+	//Student(string nm) {
+	//	name = nm;
+	//}
 
-	Student(string nm, int a) {
-		name = nm;
-		age = a;
-	}
+	//Student(string nm, int a) {
+	//	name = nm;
+	//	age = a;
+	//}
 
-	// canonical constructor
+	//// canonical constructor
 
-	Student(string nm, int a, double m) {
+	Student(string nm = "", int a = 6, double m = 4) {
 		name = nm;
 		age = a;
 		mark = m;
 	}
 
-	//copy-constructor
-	Student(const Student& student) {
+	////copy-constructor
+	//Student(const Student& student) {
 
-	}
+	//}
 
 	string convert() {
 		string s = "";

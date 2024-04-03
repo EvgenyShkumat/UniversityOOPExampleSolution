@@ -11,11 +11,11 @@ public:
 
 	// default constructor 
 
-	Student() {
+	/*Student() {
 		name = "no name";
 		age = 6;
 		mark = 4;
-	}
+	}*/
 
 	//Student(string nm) {
 	//	name = nm;
@@ -28,7 +28,7 @@ public:
 
 	//// canonical constructor
 
-	Student(string nm = "", int a = 6, double m = 4) {
+	Student(string nm = "no name", int a = 6, double m = 4) {
 		name = nm;
 		age = a;
 		mark = m;
@@ -40,7 +40,7 @@ public:
 	//}
 
 	~Student() {
-		cout << "Desctructor was called";
+		//cout << "Desctructor was called";
 	}
 
 	string convert() {

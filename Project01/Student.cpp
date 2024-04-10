@@ -1,13 +1,9 @@
 #include "Student.h"
 
-string name;
-int age;
-double mark;
-	
-Student::Student(string nm = "no name", int a = 6, double m = 4) {
+Student::Student(string nm, int a, double m) {
 	name = nm;
 	age = a;
-	mark = m;
+	mark = m; 
 }
 
 Student::~Student() { }

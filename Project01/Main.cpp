@@ -2,20 +2,15 @@
 #include "Manager.h"
 
 int main() {
-
-	int x = 5;
-	int y = (x *= 2) + (x += 3);
-
-	cout << y << endl;
-
-	Student st{"Alex", 14, 10};
+	Student st{ "Alex", 14, 10 };
 	
-	cout << "Before: " << st.convert() << endl;
+	cout << st.convert() << endl;
 
+	Student* point_st = new Student( "Alex", 14, 10 );
 
-	st.setMark(52);
+	cout << point_st->convert() << endl;
 
-	cout << "After: " << st.convert() << endl;
-
+	delete point_st;
+	
 	return 0;
 }

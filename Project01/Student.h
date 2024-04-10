@@ -1,6 +1,5 @@
 ﻿#pragma once
 #include <string>
-#include "Manager.h"
 using namespace std;
 
 class Student {

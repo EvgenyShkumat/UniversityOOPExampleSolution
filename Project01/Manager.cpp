@@ -1,5 +1,6 @@
 #include "Manager.h"
 
+
 double Manager::getMaxMark(Student* list, int length) {
 	double max = list[0].getMark();
 	for (int i = 1; i < length; i++)
@@ -37,7 +38,7 @@ double Manager::getAvgMark(Student* list, int length) {
 
 Student Manager::getBestStudent(Student* list, int length) {
 	double mark = getMaxMark(list, length);
-	Student st;
+	Student st{};
 
 	for (int i = 0; i < length; i++)
 	{

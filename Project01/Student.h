@@ -10,8 +10,6 @@ private:
 	double mark;
 
 public:
-
-	Student();
 	Student(string nm = "no name", int a = 6, double m = 4) ;
 	
 	~Student();

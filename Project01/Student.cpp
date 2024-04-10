@@ -4,12 +4,6 @@ string name;
 int age;
 double mark;
 	
-Student::Student() {
-	name = "no name";
-	age = 6;
-	mark = 4;
-}
-	
 Student::Student(string nm = "no name", int a = 6, double m = 4) {
 	name = nm;
 	age = a;

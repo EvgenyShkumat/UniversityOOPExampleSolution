@@ -10,67 +10,19 @@ private:
 	double mark;
 
 public:
+
+	Student();
+	Student(string nm = "no name", int a = 6, double m = 4) ;
 	
-	// default constructor 
-	/*Student() {
-		name = "no name";
-		age = 6;
-		mark = 4;
-	}*/
-	//Student(string nm) {
-	//	name = nm;
-	//}
-	//Student(string nm, int a) {
-	//	name = nm;
-	//	age = a;
-	//}
-	//// canonical constructor
+	~Student();
 
-	Student(string nm = "no name", int a = 6, double m = 4) {
-		name = nm;
-		age = a;
-		mark = m;
-	}
+	string convert();
 
-	////copy-constructor
-	//Student(const Student& student) {
+	string getName();
 
-	//}
+	int getAge();
+	void setAge(int a);
 
-	~Student() {
-		//cout << "Desctructor was called";
-	}
-
-	string convert() {
-		string s = "";
-		s += name;
-		s += ": age = " + to_string(age);
-		s += ", mark = " + to_string(mark);
-
-		return s;
-	}
-
-	string getName() {
-		return name;
-	}
-
-	int getAge() {
-		return age;
-	}
-
-	void setAge(int a) {
-		if (a > 0 && a < 100) {
-			age = a;
-		}
-	}
-
-	double getMark() {
-		return mark;
-	}
-
-	void setMark(double m) {
-		if (m >= 0 && m <= 10) {
-			mark = m;
-		}
-	}
+	double getMark();
+	void setMark(double m);
 };

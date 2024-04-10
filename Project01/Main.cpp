@@ -2,9 +2,16 @@
 #include "Manager.h"
 
 int main() {
-	Student st{"Alex", 14, 9};
+
+	int x = 5;
+	int y = (x *= 2) + (x += 3);
+
+	cout << y << endl;
+
+	Student st{"Alex", 14, 10};
 	
 	cout << "Before: " << st.convert() << endl;
+
 
 	st.setMark(52);
 

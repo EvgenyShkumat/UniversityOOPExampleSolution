@@ -9,7 +9,8 @@ private:
 	double mark;
 
 public:
-	Student(string nm = "no name", int a = 6, double m = 4) ;
+	Student();
+	Student(string name, int age, double mark) ;
 	
 	~Student();
 

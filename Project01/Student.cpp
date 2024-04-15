@@ -1,10 +1,9 @@
 #include "Student.h"
 
-Student::Student(string name, int age, double mark) {
-	this->name = name;
-	this->age = age;
-	this->mark = mark; 
-}
+Student::Student() : Student("no_name", 6, 4) { }
+
+Student::Student(string name, int age, double mark) 
+	: name(name), age(age), mark(mark) { }
 
 Student::~Student() { }
 

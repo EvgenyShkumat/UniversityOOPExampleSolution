@@ -1,15 +1,15 @@
 #pragma once
-#include "Student.h"
+#include "Group.h"
 
 class Manager {
 public:
-	double getMaxMark(Student* list, int length);
+	double getMaxMark(Group group);
 
-	double getMinMark(Student* list, int length);
+	double getMinMark(Group group);
 
-	double getAvgMark(Student* list, int length);
+	double getAvgMark(Group group);
 
-	Student getBestStudent(Student* list, int length);
+	Student getBestStudent(Group group);
 
-	Student getWorstStudent(Student* list, int length);
+	Student getWorstStudent(Group group);
 };

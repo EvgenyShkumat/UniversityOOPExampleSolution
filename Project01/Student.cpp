@@ -1,9 +1,9 @@
 #include "Student.h"
 
-Student::Student(string nm, int a, double m) {
-	name = nm;
-	age = a;
-	mark = m; 
+Student::Student(string name, int age, double mark) {
+	this->name = name;
+	this->age = age;
+	this->mark = mark; 
 }
 
 Student::~Student() { }
@@ -25,9 +25,9 @@ int Student::getAge() {
 	return age;
 }
 
-void Student::setAge(int a) {
-	if (a > 0 && a < 100) {
-		age = a;
+void Student::setAge(int age) {
+	if (age > 0 && age < 100) {
+		this->age = age;
 	}
 }
 
@@ -35,8 +35,8 @@ double Student::getMark() {
 		return mark;
 }
 
-void Student::setMark(double m) {
-	if (m >= 0 && m <= 10) {
-		mark = m;
+void Student::setMark(double mark) {
+	if (mark >= 0 && mark <= 10) {
+		this->mark = mark;
 	}
 }

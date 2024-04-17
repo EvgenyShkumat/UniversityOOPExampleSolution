@@ -13,6 +13,8 @@ public:
 
 	bool add(Student st);
 
+	
+
 	int getSize();
 	Student get(int index);
 

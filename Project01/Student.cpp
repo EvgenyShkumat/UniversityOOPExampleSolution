@@ -1,11 +1,24 @@
 #include "Student.h"
 
+// static class components
+int Student::count = 0;
+
+int Student::getCount() { return count; }
+
+// dynamic class components
+
 Student::Student() : Student("no_name", 6, 4) { }
 
-Student::Student(string name, int age, double mark) 
-	: name(name), age(age), mark(mark) { }
+Student::Student(string name) : name(name) {
+	count++;
+}
 
-Student::~Student() { }
+Student::Student(string name, int age, double mark) 
+	: name(name), age(age), mark(mark) {
+	count++;
+}
+
+Student::~Student() { count--; }
 
 string Student::convert() {
 	string s = "";
@@ -25,7 +38,7 @@ int Student::getAge() {
 }
 
 void Student::setAge(int age) {
-	if (age > 0 && age < 100) {
+	if (age > MIN_AGE && age < MAX_AGE) {
 		this->age = age;
 	}
 }
@@ -35,7 +48,8 @@ double Student::getMark() {
 }
 
 void Student::setMark(double mark) {
-	if (mark >= 0 && mark <= 10) {
+	if (mark >= MIN_MARK && mark <= MAX_MARK) {
 		this->mark = mark;
 	}
 }
+

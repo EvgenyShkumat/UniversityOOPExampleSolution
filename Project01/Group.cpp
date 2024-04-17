@@ -28,5 +28,5 @@ string Group::convertToString() {
 		s += list[i].convert() + "\n";
 	}
 
-	return s;
+	return s; 
 }

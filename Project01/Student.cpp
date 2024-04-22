@@ -7,12 +7,6 @@ int Student::getCount() { return count; }
 
 // dynamic class components
 
-Student::Student() : Student("no_name", 6, 4) { }
-
-Student::Student(string name) : name(name) {
-	count++;
-}
-
 Student::Student(string name, int age, double mark) 
 	: name(name), age(age), mark(mark) {
 	count++;

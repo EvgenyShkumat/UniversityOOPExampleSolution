@@ -18,9 +18,8 @@ public:
 	static const int MAX_AGE = 100;
 	static const int MIN_AGE = 0;
 
-	Student();
-	Student(string name, int age, double mark);
-	Student(string name);
+	//Student();
+	Student(string name = "no name", int age = 6, double mark = 4);
 	
 	~Student();
 

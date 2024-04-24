@@ -1,8 +1,6 @@
 #include <iostream>
 #include "Manager.h"
 
-
-
 int main() {
 
 	Group groupA;

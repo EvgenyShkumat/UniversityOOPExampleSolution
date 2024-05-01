@@ -1,6 +1,7 @@
 #include "Human.h"
 #include <string>
 
+string Human::getName() { return name; }
 void Human::setName(string name) { this->name = name; }
 int Human::getAge() { return age; }
 void Human::setAge(int age) { this->age = age; }

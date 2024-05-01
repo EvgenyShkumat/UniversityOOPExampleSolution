@@ -1,16 +1,22 @@
 #include "Stack.h"
+#include "Queue.h"
 
 int main() {
-	Stack stack;
-	stack.push(1);
-	stack.push(2);
-	stack.push(3);
-	stack.push(4);
-	stack.push(5);
+	Queue queue;
 
-	while (!stack.isEmpty()) {
-		cout << stack.pop() << " ";
+	queue.enqueue(1);
+	queue.enqueue(2);
+	queue.enqueue(3);
+	queue.enqueue(4);
+	queue.enqueue(5);
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << queue.getInfo() << endl;
+		queue.dequeue();
 	}
+	
+	
 
 	return 0;
 }

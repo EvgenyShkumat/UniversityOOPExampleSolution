@@ -24,5 +24,16 @@ public:
 	void setAge(int age);
 	
 	string getInfo();
+
+	Human& operator+(int value) {
+		Human h(name, age + value);
+		return h;
+	}
+
+	Human& operator+(Human& human) {
+		Human h(name + "-" + human.name,
+			age + human.age);
+		return h;
+	}
 };
 

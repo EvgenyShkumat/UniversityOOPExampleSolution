@@ -20,5 +20,8 @@ public:
 	double getSalary();
 	void setSalary(double salary);
 	string getInfo();
+
+
+
 };
 

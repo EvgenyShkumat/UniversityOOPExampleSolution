@@ -4,7 +4,7 @@ using namespace std;
 
 class Human
 {
-private:
+protected:
 	string name;
 	int age;
 

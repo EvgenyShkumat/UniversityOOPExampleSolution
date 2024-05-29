@@ -1,18 +1,21 @@
 #pragma once
+#include <string>
+using namespace std;
+
 class Bee
 {
 protected:
 	int lifetime;
-	double honeyConsuption;
+	double honeyConsumption;
 
 public:
-	Bee() : lifetime(10), honeyConsuption(0.5) {}
-	Bee(int lifetime, double honeyConsuption) : 
-		lifetime(lifetime), honeyConsuption(honeyConsuption) {}
+	Bee() : lifetime(10), honeyConsumption(0.5) {}
+	Bee(int lifetime, double honeyConsumption) : 
+		lifetime(lifetime), honeyConsumption(honeyConsumption) {}
 
 	int getLifetime();
 
-	double getHoneyConsuption();
-	void setHoneyConsuption(double honeyConsuption);
+	double getHoneyConsumption();
+	void setHoneyConsumption(double honeyConsumption);
 };
 

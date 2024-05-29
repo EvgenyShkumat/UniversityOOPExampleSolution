@@ -21,12 +21,54 @@
     <ClCompile Include="Beehive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QueenBee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Drone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NurceBee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkerBee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoutBee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GuardBee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BuilderBee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bee.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Beehive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueenBee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Drone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NurceBee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkerBee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoutBee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardBee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BuilderBee.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,5 +2,5 @@
 
 int Bee::getLifetime() { return lifetime; }
 
-double Bee::getHoneyConsuption() { return honeyConsuption; }
-void Bee::setHoneyConsuption(double honeyConsuption) { this->honeyConsuption = honeyConsuption; }
+double Bee::getHoneyConsumption() { return honeyConsumption; }
+void Bee::setHoneyConsumption(double honeyConsumption) { this->honeyConsumption = honeyConsumption; }

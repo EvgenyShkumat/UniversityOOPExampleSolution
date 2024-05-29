@@ -15,5 +15,7 @@ public:
 
 	int getDistance();
 	void setDistance(int distance);
+
+	string getInfo() override;
 };
 

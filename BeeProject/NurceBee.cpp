@@ -6,3 +6,7 @@ void NurceBee::setMilkPerDay() {
 		this->milkPerDay = milkPerDay;
 	}
 }
+
+string NurceBee::getInfo() {
+	return "Nurce bee: " + Bee::getInfo() + ", produce milk per day = " + to_string(milkPerDay);
+}

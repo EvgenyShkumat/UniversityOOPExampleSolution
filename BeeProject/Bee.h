@@ -17,5 +17,7 @@ public:
 
 	double getHoneyConsumption();
 	void setHoneyConsumption(double honeyConsumption);
+
+	virtual string getInfo();
 };
 

@@ -41,3 +41,66 @@ void Beehive::setFrameAmount(int frameAmount) {
 		this->frameAmount = frameAmount;
 	}
 }
+
+string Beehive::getBeesInfo() {
+	string s = "";
+
+	for (int i = 0; i < size; i++)
+	{
+		s += bees[i].getInfo() + "\n";
+	}
+
+	return s;
+}
+
+string Beehive::getBeehiveInfo() {
+	return "Beehive: heigth = " + to_string(heigth) + ", width = " + to_string(width) +
+		", legngth = " + to_string(length) + ", material = " + material + ", type = " + type +
+		", amount of frames = " + to_string(frameAmount);
+}
+
+void Beehive::add(Bee bee) {
+	if (size = 0) {
+		bees = new Bee[1];
+		*(bees + 1) = bee;
+	}
+	else {
+		Bee* temp = new Bee[size + 1];
+
+		for (int i = 0; i < size; i++)
+		{
+			*(temp + i) = *(bees + i);
+		}
+
+		*(temp + size) = bee;
+		delete[] bees;
+		bees = temp;
+	}
+
+	size++;
+}
+
+Bee Beehive::get(int index) {
+	if (index > 0 && index < size) {
+		return *(bees + index);
+	}
+	else {
+		return Bee();
+	}
+}
+
+void Beehive::remove(int index) {
+	if (size != 0) {
+		Bee* temp = new Bee[size - 1];
+
+		for (int i = 0, k = 0; i < size - 1; i++)
+		{
+			if (index != i) {
+				temp[k++] = *(bees + i);
+			}
+		}
+		size--;
+		delete[] bees;
+		bees = temp;
+	}
+}

@@ -11,5 +11,6 @@ public:
 
 	int getReplushedAttack();
 	void setReplushedAttack(int replushedAttack);
+	string getInfo() override;
 };
 

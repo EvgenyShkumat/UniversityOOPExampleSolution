@@ -16,3 +16,8 @@ void QueenBee::setAge(int age) {
 		this->age = age;
 	}
 }
+
+string QueenBee::getInfo() {
+	return "Queen bee: " + Bee::getInfo() + ", size = " + size + 
+		", eggs per day = " + to_string(eggPerDay) + ", age = " + to_string(age);
+}

@@ -6,3 +6,7 @@ void BuilderBee::setWorkLoad(double workload) {
 		this->workload = workload;
 	}
 }
+
+string BuilderBee::getInfo() {
+	return "Builder bee: " + Bee::getInfo() + ", workload per day = " + to_string(workload);
+}

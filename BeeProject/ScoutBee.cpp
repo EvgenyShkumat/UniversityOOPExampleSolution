@@ -6,3 +6,7 @@ void ScoutBee::setDistance(int distance) {
 		this->distance = distance;
 	}
 }
+
+string ScoutBee::getInfo() {
+	return "Scout bee: " + Bee::getInfo() + ", distance = " + to_string(distance);
+}

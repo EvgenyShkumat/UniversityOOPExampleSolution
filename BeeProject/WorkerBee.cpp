@@ -9,3 +9,8 @@ void WorkerBee::setDistance(int distance) {
 		this->distance = distance;
 	}
 }
+
+string WorkerBee::getInfo() {
+	return "Worker bee: " + Bee::getInfo() + ", distance = " 
+		+ to_string(distance) + ", type of flowers = " + type;
+}

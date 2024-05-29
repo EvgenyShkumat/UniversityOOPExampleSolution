@@ -11,6 +11,6 @@ public:
 
 	int getMilkPerDay();
 	void setMilkPerDay();
-
+	string getInfo() override;
 };
 

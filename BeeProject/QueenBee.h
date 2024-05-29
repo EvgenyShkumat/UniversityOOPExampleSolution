@@ -18,6 +18,8 @@ public:
 	void setAge(int age);
 
 	int getEggPerDay();
-	void setEggPerDay(int eggPerDa);
+	void setEggPerDay(int eggPerDay);
+
+	string getInfo() override;
 };
 

@@ -6,3 +6,7 @@ void GuardBee::setReplushedAttack(int replushedAttack) {
 		this->replushedAttack = replushedAttack;
 	}
 }
+
+string GuardBee::getInfo() {
+	return "Guard bee: " + Bee::getInfo() + ", amount of replushed attacks = " + to_string(replushedAttack);
+}

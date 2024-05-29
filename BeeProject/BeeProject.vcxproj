@@ -121,6 +121,7 @@
   <ItemGroup>
     <ClCompile Include="Bee.cpp" />
     <ClCompile Include="Beehive.cpp" />
+    <ClCompile Include="Beekeeper.cpp" />
     <ClCompile Include="BuilderBee.cpp" />
     <ClCompile Include="Drone.cpp" />
     <ClCompile Include="GuardBee.cpp" />
@@ -132,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="Bee.h" />
     <ClInclude Include="Beehive.h" />
+    <ClInclude Include="Beekeeper.h" />
     <ClInclude Include="BuilderBee.h" />
     <ClInclude Include="Drone.h" />
     <ClInclude Include="GuardBee.h" />

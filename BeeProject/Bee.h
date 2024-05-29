@@ -19,5 +19,7 @@ public:
 	void setHoneyConsumption(double honeyConsumption);
 
 	virtual string getInfo();
+	virtual double findConsumption() = 0;
 };
 
+// honeyConsumption хранит в себе потреление мёда без учета работы пчелы

@@ -12,5 +12,6 @@ public:
 	string getSize();
 	void setSize(string size);
 	string getInfo() override;
+	double findConsumption() override;
 };
 

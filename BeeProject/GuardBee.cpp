@@ -10,3 +10,5 @@ void GuardBee::setReplushedAttack(int replushedAttack) {
 string GuardBee::getInfo() {
 	return "Guard bee: " + Bee::getInfo() + ", amount of replushed attacks = " + to_string(replushedAttack);
 }
+
+double GuardBee::findConsumption() { return honeyConsumption * replushedAttack; }

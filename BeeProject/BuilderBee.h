@@ -12,5 +12,6 @@ public:
 	double getWorkload();
 	void setWorkLoad(double workload);
 	string getInfo() override;
+	double findConsumption() override;
 };
 

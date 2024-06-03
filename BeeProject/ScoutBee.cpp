@@ -10,3 +10,5 @@ void ScoutBee::setDistance(int distance) {
 string ScoutBee::getInfo() {
 	return "Scout bee: " + Bee::getInfo() + ", distance = " + to_string(distance);
 }
+
+double ScoutBee::findConsumption() { return honeyConsumption * distance / 500; }

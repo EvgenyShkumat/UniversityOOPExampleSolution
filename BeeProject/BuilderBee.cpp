@@ -10,3 +10,5 @@ void BuilderBee::setWorkLoad(double workload) {
 string BuilderBee::getInfo() {
 	return "Builder bee: " + Bee::getInfo() + ", workload per day = " + to_string(workload);
 }
+
+double BuilderBee::findConsumption() { return honeyConsumption * workload; }

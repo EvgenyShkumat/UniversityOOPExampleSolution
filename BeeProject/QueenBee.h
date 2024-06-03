@@ -19,7 +19,7 @@ public:
 
 	int getEggPerDay();
 	void setEggPerDay(int eggPerDay);
-
 	string getInfo() override;
+	double findConsumption() override;
 };
 

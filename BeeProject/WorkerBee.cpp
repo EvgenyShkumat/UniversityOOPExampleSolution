@@ -14,3 +14,5 @@ string WorkerBee::getInfo() {
 	return "Worker bee: " + Bee::getInfo() + ", distance = " 
 		+ to_string(distance) + ", type of flowers = " + type;
 }
+
+double WorkerBee::findConsumption() { return honeyConsumption / 1000; }

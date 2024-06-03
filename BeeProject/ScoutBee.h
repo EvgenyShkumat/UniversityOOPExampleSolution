@@ -13,5 +13,6 @@ public:
 	void setDistance(int distance);
 
 	string getInfo() override;
+	double findConsumption() override;
 };
 

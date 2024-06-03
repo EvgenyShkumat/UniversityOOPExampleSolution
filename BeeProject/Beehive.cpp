@@ -42,65 +42,52 @@ void Beehive::setFrameAmount(int frameAmount) {
 	}
 }
 
-string Beehive::getBeesInfo() {
-	string s = "";
-
-	for (int i = 0; i < size; i++)
-	{
-		s += bees[i].getInfo() + "\n";
-	}
-
-	return s;
-}
-
 string Beehive::getBeehiveInfo() {
 	return "Beehive: heigth = " + to_string(heigth) + ", width = " + to_string(width) +
 		", legngth = " + to_string(length) + ", material = " + material + ", type = " + type +
 		", amount of frames = " + to_string(frameAmount);
 }
 
-void Beehive::add(Bee bee) {
-	if (size = 0) {
-		bees = new Bee[1];
-		*(bees + 1) = bee;
+void Beehive::add(Bee* bee) {
+	if (size == 0) {
+		bees = new Bee*[1];
+		*bees = bee;
 	}
 	else {
-		Bee* temp = new Bee[size + 1];
+		Bee** temp = new Bee*[size + 1];
 
 		for (int i = 0; i < size; i++)
 		{
 			*(temp + i) = *(bees + i);
 		}
-
 		*(temp + size) = bee;
 		delete[] bees;
 		bees = temp;
 	}
-
 	size++;
-}
-
-Bee Beehive::get(int index) {
-	if (index > 0 && index < size) {
-		return *(bees + index);
-	}
-	else {
-		return Bee();
-	}
 }
 
 void Beehive::remove(int index) {
 	if (size != 0) {
-		Bee* temp = new Bee[size - 1];
+		Bee** temp = new Bee*[size - 1];
 
-		for (int i = 0, k = 0; i < size - 1; i++)
+		for (int i = 0, j = 0; i < length; i++)
 		{
-			if (index != i) {
-				temp[k++] = *(bees + i);
+			if (i != index) {
+				*(temp + j) = *(bees + i);
+				j++;
 			}
 		}
-		size--;
+
 		delete[] bees;
 		bees = temp;
+		size--;
 	}
 }
+
+Bee* Beehive::get(int index) {
+	if (index >= 0 && index < size) {
+		return *(bees + index);
+	}
+}
+

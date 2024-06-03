@@ -6,7 +6,7 @@ using namespace std;
 class Beehive
 {
 private:
-	Bee* bees;
+	Bee** bees;
 
 	int size = 0;
 	int heigth;
@@ -20,8 +20,8 @@ public:
 	Beehive(int heigth, int width, int length, string material, string type, int frameAmount) :  
 		heigth(heigth), width(width), length(length), material(material), type(type), frameAmount(frameAmount) {}
 
-	void add(Bee bee);
-	Bee get(int index);
+	void add(Bee* bee);
+	Bee* get(int index);
 	void remove(int index);
 
 	string getBeesInfo();

@@ -14,5 +14,7 @@ int main() {
 	beehive.add(bee1);
 	beehive.add(bee2);
 
+	cout << beehive.getBeesInfo();
+
 	return 0;
 }

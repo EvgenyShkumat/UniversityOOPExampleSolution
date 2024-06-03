@@ -1,4 +1,6 @@
 #include "Beehive.h"
+#include <string>
+using namespace std;
 
 int Beehive::getSize() { return size; }
 
@@ -46,6 +48,17 @@ string Beehive::getBeehiveInfo() {
 	return "Beehive: heigth = " + to_string(heigth) + ", width = " + to_string(width) +
 		", legngth = " + to_string(length) + ", material = " + material + ", type = " + type +
 		", amount of frames = " + to_string(frameAmount);
+}
+
+string Beehive::getBeesInfo() {
+	string s = "";
+
+	for (int i = 0; i < size; i++)
+	{
+		s += bees[i]->getInfo() + "\n";
+	}
+
+	return s;
 }
 
 void Beehive::add(Bee* bee) {

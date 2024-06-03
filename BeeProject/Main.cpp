@@ -3,6 +3,7 @@
 #include "Beehive.h"
 #include "BuilderBee.h"
 #include "GuardBee.h"
+#include "Beekeeper.h"
 using namespace std;
 
 int main() {
@@ -14,7 +15,9 @@ int main() {
 	beehive.add(bee1);
 	beehive.add(bee2);
 
-	cout << beehive.getBeesInfo();
+	Beekeeper keeper;
+
+	cout << keeper.findHoney(beehive);
 
 	return 0;
 }

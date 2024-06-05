@@ -16,3 +16,5 @@ string WorkerBee::getInfo() {
 }
 
 double WorkerBee::findConsumption() { return honeyConsumption / 1000; }
+
+double WorkerBee::produceHoney() { return 2 * distance / 500; }

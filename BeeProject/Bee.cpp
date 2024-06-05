@@ -8,3 +8,5 @@ void Bee::setHoneyConsumption(double honeyConsumption) { this->honeyConsumption 
 string Bee::getInfo() {
 	return "lifetime = " + to_string(lifetime) + ", honey consumption = " + to_string(honeyConsumption);
 }
+
+double Bee::produceHoney() { return 0; }

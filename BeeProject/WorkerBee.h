@@ -16,6 +16,8 @@ public:
 	int getDistance();
 	void setDistance(int distance);
 
+	double produceHoney() override;
+
 	string getInfo() override;
 	double findConsumption() override;
 };

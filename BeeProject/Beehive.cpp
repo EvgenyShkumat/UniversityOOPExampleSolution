@@ -102,5 +102,6 @@ Bee* Beehive::get(int index) {
 	if (index >= 0 && index < size) {
 		return *(bees + index);
 	}
+	
 }
 

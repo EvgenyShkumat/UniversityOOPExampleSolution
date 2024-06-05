@@ -18,6 +18,8 @@ public:
 	double getHoneyConsumption();
 	void setHoneyConsumption(double honeyConsumption);
 
+	virtual double produceHoney();
+
 	virtual string getInfo();
 	virtual double findConsumption() = 0;
 };

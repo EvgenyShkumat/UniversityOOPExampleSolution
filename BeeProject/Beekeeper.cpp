@@ -1,3 +1,4 @@
+#include <typeinfo>
 #include "Beekeeper.h"
 #include "Beehive.h"
 double Beekeeper::findHoney(Beehive beehive) {
@@ -6,7 +7,9 @@ double Beekeeper::findHoney(Beehive beehive) {
 	for (int i = 0; i < beehive.getSize(); i++)
 	{
 		sum -= beehive.get(i)->findConsumption();
+		sum += beehive.get(i)->produceHoney();
 	}
+
 
 	return sum;
 }
